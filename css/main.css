@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+*, 
+::after, 
+::before {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem is equal to 10px ... 10px/16px = 62.5% */
+}
+body {
+    display: flex;
+    font-weight: 400;
+    line-height: 1.6;
+    color: goldenrod;
+    background-image: linear-gradient(to right bottom, darkslateblue, midnightblue );
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+main {
+    width: 50%;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 2rem;
+    box-shadow: 0 10px 15px -6px black;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    color: darkslateblue;
+}
+main h2 {
+    font-size: 2rem;
+}
+main h2 span {
+    text-transform: capitalize;
+}
+section a {
+    text-decoration: none;
+    font-style: italic;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: normal;
+    color: darkslateblue;
+}
+
+.link a {
+    color: indianred;
+}

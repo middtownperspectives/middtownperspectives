@@ -1,0 +1,94 @@
+*,
+::after, 
+::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    background-color: rgb(100,151,156);
+    color: rgb(253,240,195);
+    align-items: center;
+    justify-content: space-between;
+}
+header * {
+ margin: .5% 10% 0;
+}
+
+main {
+    height: 100%;
+    color: black;
+    position: relative;
+    display: block;
+}
+main h1 {
+    padding: 1em;
+    position: absolute;
+    right: 50%;
+    top: 40%;
+}
+main h1 span {
+    color: rgb(253,240,195);
+    display: block;
+    margin-top: 1em;
+}
+main h1 span:before {
+    content: "—";
+}
+.quote {
+    background-color: rgba(100,151,156, 1);
+}
+.quote * a, .quote * a:link, .quote * a:active, .quote * a:visited  {
+    color: rgb(253,240,195);
+    text-decoration: none;
+}
+.poster {
+    background-color: rgba(253,240,195, 1);
+}
+.poster img {
+    width: 100%;
+    height: auto;
+}
+.poster-area {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+.column {
+    flex: 1 0 50%;}
+footer {
+    background-color: rgba(253,240,195, 1);
+    height: 5vh;
+    width: 100%;
+    color: rgb(100,151,156);
+    text-align: center;
+
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+}
+footer h5 {
+    font-weight: 100;
+    text-transform: capitalize;
+    font-style: italic;
+}
+footer p a,
+footer h5 a {
+    color: rgb(100,151,156);
+    text-transform: capitalize;
+    font-size: 1rem;
+    text-decoration: none;
+}
+p.footer__txt a {
+    color: rgb(207,22,30);
+}
+
+/* @media screen and (max-width: 600px) {
+    main, aside { width: 100%; display: block; min-height: 45vh; height: auto;}
+    footer { position: initial; }
+    main h1 { position: static; -webkit-transform: none; transform: none; padding: 70px; }
+} */
