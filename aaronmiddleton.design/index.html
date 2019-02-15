@@ -3,17 +3,55 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="css/main.css">
-    <title>Aaron Middleton's Design Page</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Aaron Middleton's Web and Digital Design Page</title>
   </head>
   <body>
-    <main>
-        <div>
-          <h1>Current Projects</h1>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">aaronmiddleton.design</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">instagram</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <a class="nav-link" href="#">resume</a>
+          </span>
         </div>
-      <section>
-          <h3><a href="we-the-people.html" rel="noopener noreferrer">We The People Support Teachers</a></h3>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="intro-text">
+        <h1>hey! <span>im aaron, a web developer &amp; UX designer.</span> </h1>
       </section>
+
+      <section class="projects-area">
+        <div>
+          <h2>Current Projects</h2>
+        </div>
+        <div class="container-fluid">
+            <h3><a href="static-pages/we-the-people.html" rel="noopener noreferrer">We The People Support Teachers</a></h3>
+        </div>
+      </section>
+
     </main>
+
   </body>
+
 </html>

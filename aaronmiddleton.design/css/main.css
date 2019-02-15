@@ -1,18 +1,21 @@
-* {
-    padding: 0;
-    margin: 0;
+/* bootstrap overrides */
+
+.navbar-light .navbar-brand {
+    color: darkslateblue;
 }
-*, 
-::after, 
-::before {
-    box-sizing: inherit;
+
+.nav-link {
+    padding: 0.5rem 1rem .5rem 0rem;
 }
-html {
-    box-sizing: border-box;
-    font-size: 62.5%; /* 1rem is equal to 10px ... 10px/16px = 62.5% */
+
+a {
+    font-family: "Lucida Sans Typewriter";
 }
+
+/* end bootstrap overrides */
+
+
 body {
-    display: flex;
     font-weight: 400;
     line-height: 1.6;
     color: goldenrod;
@@ -21,7 +24,22 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
 }
-main {
+
+
+.intro-text {
+    margin-bottom: 10%;
+    padding-top: 5%;
+    color: #D7ECFF;
+}
+
+.intro-text h1 {
+    text-align: center;
+    font-size: 4rem;
+    padding: 0 5%;
+    text-transform: capitalize;
+}
+
+.projects-area {
     width: 50%;
     margin: auto;
     background-color: whitesmoke;
@@ -33,26 +51,29 @@ main {
     align-items: center;
     flex-direction: column;
 }
-main h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 4rem;
+
+.projects-area h2 {
+    font-family: helvetica;
+    font-size: 2.5rem;
     color: darkslateblue;
-}
-main h2 {
-    font-size: 2rem;
-}
-main h2 span {
-    text-transform: capitalize;
-}
-section a {
-    text-decoration: none;
-    font-style: italic;
-    text-transform: capitalize;
-    font-size: 2rem;
-    font-weight: normal;
-    color: darkslateblue;
+    font-weight: 300;
+    text-align: center;
 }
 
-.link a {
-    color: indianred;
+.projects-area h3 {
+    margin-top: 5%;
+    text-align: center;
 }
+
+.projects-area h2 span {
+    text-transform: capitalize;
+}
+
+.projects-area a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #386894;
+}
+
