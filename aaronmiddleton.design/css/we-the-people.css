@@ -14,22 +14,25 @@ header {
     color: rgb(253,240,195);
     align-items: center;
     justify-content: space-between;
+    min-height: 10vh;
 }
 header * {
  margin: .5% 10% 0;
+
 }
 
 main {
-    height: 100%;
+    min-height: 80vh;
     color: black;
     position: relative;
     display: block;
 }
 main h1 {
     padding: 1em;
-    position: absolute;
+    margin: 50% 0;
+    /* position: absolute;
     right: 50%;
-    top: 40%;
+    top: 40%; */
 }
 main h1 span {
     color: rgb(253,240,195);
@@ -52,17 +55,19 @@ main h1 span:before {
 .poster img {
     width: 100%;
     height: auto;
+    margin-top: 20%;
 }
 .poster-area {
     display: flex;
     flex: 1;
     justify-content: space-between;
+    min-height: inherit;
 }
 .column {
     flex: 1 0 50%;}
 footer {
     background-color: rgba(253,240,195, 1);
-    height: 5vh;
+    min-height: 10vh;
     width: 100%;
     color: rgb(100,151,156);
     text-align: center;
@@ -87,8 +92,10 @@ p.footer__txt a {
     color: rgb(207,22,30);
 }
 
-/* @media screen and (max-width: 600px) {
-    main, aside { width: 100%; display: block; min-height: 45vh; height: auto;}
-    footer { position: initial; }
-    main h1 { position: static; -webkit-transform: none; transform: none; padding: 70px; }
-} */
+@media screen and (max-width: 600px) {
+
+    h1 { font-size: 1rem; }
+    header { flex-direction: column; padding: 5% 0; }
+    .poster-area, footer { flex-direction: column-reverse; }
+    footer { padding: 3% 0; }
+}
