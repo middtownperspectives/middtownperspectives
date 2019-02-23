@@ -55,7 +55,7 @@ main h1 span:before {
 .poster img {
     width: 100%;
     height: auto;
-    margin-top: 20%;
+    margin-top: 5%;
 }
 .poster-area {
     display: flex;

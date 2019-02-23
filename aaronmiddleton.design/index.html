@@ -10,6 +10,7 @@
     <title>Aaron Middleton's Web and Digital Design Page</title>
   </head>
   <body>
+    <div class="mw1920">
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">aaronmiddleton.design</a>
@@ -22,7 +23,7 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">about</a>
+              <a class="nav-link" href="#projects">projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://www.instagram.com/middtownperspectives/" rel="noopener noreferrer" target="_blank">instagram</a>
@@ -35,32 +36,73 @@
       </nav>
     </header>
 
-    <main class="container-fluid">
+    <main>
 
-      <section class="intro-text">
-        <h1>hey! My name is aaron. <span class="hide-on-mobile"> I     
-          <span class="sliding-vertical">
-            <span>laugh.</span>
-            <span>develope.</span>
-            <span>photograph.</span>
-            <span>design.</span>
-            <span>love tea.</span>
+      <section class="jumbotron jumbotron-fluid intro-text">
+        <div class="container">
+          <h1>hey! My name is aaron. <span class="hide-on-mobile"> I     
+            <span class="sliding-vertical">
+              <span>laugh.</span>
+              <span>develop.</span>
+              <span>photograph.</span>
+              <span>design.</span>
+              <span>love tea.</span>
+            </span>
           </span>
-        </span>
-        </h1>
+          </h1>
+        </div>
       </section>
 
-      <section class="projects-area">
-        <div>
-          <h2>Current Projects</h2>
+      <section class="container-fluid about-me">
+
+        <div class="aaron-img"> </div>
+
+        <div class="aaron-txt">
+          <p>a little about me</p>
+          <p>Lorem ipsum dolor amet subway tile jean shorts four dollar toast af, enamel pin beard try-hard next level taxidermy reprehenderit everyday carry 8-bit cray ut. Voluptate vice velit pop-up banjo messenger bag poke poutine. Raw denim ea shaman non. Shoreditch artisan elit umami dolor kombucha irony in tattooed shaman selfies. Chambray live-edge cillum, meh irure raw denim godard.</p>
         </div>
-        <div>
-            <h3><a href="static-pages/we-the-people.html" rel="noopener noreferrer">We The People Support Teachers</a></h3>
+ 
+      </section>
+
+      <section id="projects" class="container-fluid projects-area flex-wrap">
+        
+        <h2>Current Projects</h2>
+
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="./assets/img/we-the-people-teachers.png" alt="we the people support teachers">
+            <div class="card-body">
+              <h3><a href="static-pages/we-the-people.html" rel="noopener noreferrer">Art for teachers</a></h3>
+              <p class="card-text">A webpage poster design to help promote funding an initiative to provide art in classrooms.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="https://images.pexels.com/photos/209717/pexels-photo-209717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image cap">
+            <div class="card-body">
+              <h3 class="card-title"><a>Coming soon...</a></h5>
+              <p class="card-text">I would love place my cool project here, but it is still in the works.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="https://images.pexels.com/photos/209717/pexels-photo-209717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image cap">
+            <div class="card-body">
+              <h3 class="card-title"><a>Coming soon...</a></h5>
+              <p class="card-text">I would love place my cool project here, but it is still in the works.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="https://images.pexels.com/photos/209717/pexels-photo-209717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image cap">
+            <div class="card-body">
+              <h3 class="card-title"><a>Coming soon...</a></h3>
+              <p class="card-text">I would love place my cool project here, but it is still in the works.</p>
+            </div>
+          </div>
         </div>
+
       </section>
 
     </main>
-
+    </div>
   </body>
 
 </html>

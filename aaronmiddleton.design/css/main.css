@@ -1,67 +1,118 @@
 /* bootstrap overrides */
-
+.jumbotron.intro-text {
+	background-color: inherit;
+	margin: 0;
+}
 .navbar-light .navbar-brand {
     color: darkslateblue;
 }
-
+.navbar {
+	padding: 1% 5% 1% 5%;
+}
 .nav-link {
     padding: 0.5rem 1rem .5rem 0rem;
 }
-
+.card img {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+.intro-text .container {
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: 0;
+	margin-left: 0;
+}
+.card {
+	max-width: 25rem;
+	min-width: 15.8rem;
+	margin: 2rem 0;
+}
+.card-deck {
+	justify-content: space-around;
+}
 a {
     font-family: "Lucida Sans Typewriter";
 }
 
 /* end bootstrap overrides */
 
-
 body {
     font-weight: 400;
     line-height: 1.6;
-    color: goldenrod;
+    color: gray;
     background-image: linear-gradient(to right bottom, darkslateblue, midnightblue );
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
 }
-
-
+.mw1920 {
+	max-width: 120rem;
+	margin: auto;
+}
 .intro-text {
-    margin-bottom: 10%;
-    padding-top: 5%;
-    color: #D7ECFF;
+	padding: 5% 5% 0;
+    color: whitesmoke;
 }
 
 .intro-text h1 {
     font-size: 3rem;
-    padding: 0 5%;
     text-transform: capitalize;
 }
 
 .projects-area {
-    width: 50%;
     margin: auto;
-    background-color: whitesmoke;
-    padding: 2rem;
-    box-shadow: 0 10px 15px -6px black;
-
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
+	padding: 5%;
 }
 
-.projects-area h2 {
+.about-me {
+	display: flex;
+	justify-content: space-between;
+	height: 45rem;
+	padding: 5% 5% 0;
+}
+.aaron-img {
+	position: relative;
+	width: 100%;
+	max-width: 30rem;
+	height: 100%;
+	background: url('../assets/img/aaron-m.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+/* .aaron-txt {
+	width: 50rem;
+} */
+.aaron-txt p {
+	color: whitesmoke;
+    font-size: 1.5rem;
+	font-weight: 100;
+	padding: 5rem 2rem 0;
+}
+.aaron-img:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to right bottom, darkslateblue, midnightblue );
+	opacity: .6; 
+}
+/* .about-me blockquote {
+	font-family: "Times New Roman", Times, serif;
+	padding: 0 2%;
+	color: whitesmoke;
+	font-weight: 300;
+	margin-left: 4rem;
+	font-size: 1.5rem;
+} */
+.projects-area h2, .about-me h2 {
     font-family: helvetica;
     font-size: 2.5rem;
-    color: darkslateblue;
-    font-weight: 300;
-    text-align: center;
-}
-
-.projects-area h3 {
-    margin-top: 5%;
-    text-align: center;
+    color: whitesmoke;
+	font-weight: 300;
+	margin: 2% 0;
+	text-transform: capitalize;
 }
 
 .projects-area h2 span {
@@ -71,9 +122,9 @@ body {
 .projects-area a {
     text-decoration: none;
     text-transform: capitalize;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: normal;
-    color: goldenrod;
+    color: slateblue !important;
 }
 
 /*Vertical Sliding*/
@@ -85,7 +136,7 @@ body {
 	animation: topToBottom 12.5s linear infinite 0s;
 	-ms-animation: topToBottom 12.5s linear infinite 0s;
 	-webkit-animation: topToBottom 12.5s linear infinite 0s;
-	color: #00abe9;
+	color: #80bdff;
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
@@ -163,6 +214,22 @@ body {
 	}
 	.projects-area {
 		width: 100%;
+	    padding: 0 5% 5%;
+	}
+	.about-me {
+		flex-direction: column;
+	}
+	.aaron-img {
+		display: none;
+	}
+	.about-me blockquote {
+		margin-left: 0;
+		margin: auto;
+		text-align: center;
+	}
+	.aaron-txt p {
+		padding: 2rem 0 0;
+		margin-bottom: 0;
 	}
   }
 
@@ -170,4 +237,5 @@ body {
 	.hide-on-mobile {
 		display: block !important;
 	}
+	
 }
