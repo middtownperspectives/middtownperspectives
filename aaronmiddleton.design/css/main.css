@@ -14,6 +14,8 @@
 }
 .card img {
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
 	filter: grayscale(100%);
 }
 .intro-text .container {
@@ -33,9 +35,7 @@
 a {
     font-family: "Lucida Sans Typewriter";
 }
-
 /* end bootstrap overrides */
-
 body {
     font-weight: 400;
     line-height: 1.6;
@@ -53,17 +53,14 @@ body {
 	padding: 5% 5% 0;
     color: whitesmoke;
 }
-
 .intro-text h1 {
     font-size: 3rem;
     text-transform: capitalize;
 }
-
 .projects-area {
     margin: auto;
 	padding: 5%;
 }
-
 .about-me {
 	display: flex;
 	justify-content: space-between;
@@ -78,10 +75,6 @@ body {
 	background: url('../assets/img/aaron-m.jpg') center center no-repeat;
 	background-size: cover;
 }
-
-/* .aaron-txt {
-	width: 50rem;
-} */
 .aaron-txt p {
 	color: whitesmoke;
     font-size: 1.5rem;
@@ -98,14 +91,6 @@ body {
 	background-image: linear-gradient(to right bottom, darkslateblue, midnightblue );
 	opacity: .6; 
 }
-/* .about-me blockquote {
-	font-family: "Times New Roman", Times, serif;
-	padding: 0 2%;
-	color: whitesmoke;
-	font-weight: 300;
-	margin-left: 4rem;
-	font-size: 1.5rem;
-} */
 .projects-area h2, .about-me h2 {
     font-family: helvetica;
     font-size: 2.5rem;
@@ -114,11 +99,9 @@ body {
 	margin: 2% 0;
 	text-transform: capitalize;
 }
-
 .projects-area h2 span {
     text-transform: capitalize;
 }
-
 .projects-area a {
     text-decoration: none;
     text-transform: capitalize;
@@ -126,7 +109,6 @@ body {
     font-weight: normal;
     color: slateblue !important;
 }
-
 /*Vertical Sliding*/
 .sliding-vertical{
 	display: inline;
@@ -166,7 +148,6 @@ body {
 	-ms-animation-delay: 12.5s;
 	-webkit-animation-delay: 12.5s;
 }
-
 /*topToBottom Animation*/
 @keyframes topToBottom{
 	0% { opacity: 0; }
@@ -204,7 +185,6 @@ body {
 	80% { opacity: 0; }
 	100% { opacity: 0; }
 }
-
 @media only screen and (max-width: 600px) {
 	body {
 		background-repeat: repeat-y;
@@ -231,11 +211,9 @@ body {
 		padding: 2rem 0 0;
 		margin-bottom: 0;
 	}
-  }
-
+}
 @media only screen and (max-width: 1200px) {
 	.hide-on-mobile {
 		display: block !important;
 	}
-	
 }
