@@ -1,9 +1,10 @@
 import React from "react";
+import Nav from './navigation/Nav';
 
 const Header = () => {
   return (
     <header>
-      <p>header</p>
+      <Nav />
     </header>
   );
 };

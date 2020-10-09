@@ -1,10 +1,10 @@
 # middtownperspectives
 
-Portfolio progress can be viewed at [middtownperspectives](http://www.middtownperspectives).
+Portfolio progress can be viewed at [middtownperspectives](http://www.middtownperspectives.co).
 
 ## About
 
-This is the beginning of my professional webpage for my web design, ux design, photography and other artistic outlets I enjoy exploring. 
+This is the beginning of my professional webpage for my web design, ux design, photography and other artistic outlets I enjoy exploring.
 
 This page may take on many views along the way in the next year.
 
