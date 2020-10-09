@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/aaronmiddleton/static/css/main.bfa04731.chunk.css",
-    "main.js": "/aaronmiddleton/static/js/main.2303002c.chunk.js",
-    "main.js.map": "/aaronmiddleton/static/js/main.2303002c.chunk.js.map",
-    "runtime-main.js": "/aaronmiddleton/static/js/runtime-main.b34d484d.js",
-    "runtime-main.js.map": "/aaronmiddleton/static/js/runtime-main.b34d484d.js.map",
-    "static/js/2.96816075.chunk.js": "/aaronmiddleton/static/js/2.96816075.chunk.js",
-    "static/js/2.96816075.chunk.js.map": "/aaronmiddleton/static/js/2.96816075.chunk.js.map",
-    "index.html": "/aaronmiddleton/index.html",
-    "precache-manifest.b9cf6295099090f6ea2a473ec8e84d63.js": "/aaronmiddleton/precache-manifest.b9cf6295099090f6ea2a473ec8e84d63.js",
-    "service-worker.js": "/aaronmiddleton/service-worker.js",
-    "static/css/main.bfa04731.chunk.css.map": "/aaronmiddleton/static/css/main.bfa04731.chunk.css.map",
-    "static/js/2.96816075.chunk.js.LICENSE.txt": "/aaronmiddleton/static/js/2.96816075.chunk.js.LICENSE.txt",
-    "static/media/under-construction.png": "/aaronmiddleton/static/media/under-construction.13a13a9f.png"
+    "main.css": "/middtownperspectives/static/css/main.1f5d60fc.chunk.css",
+    "main.js": "/middtownperspectives/static/js/main.7297bdc6.chunk.js",
+    "main.js.map": "/middtownperspectives/static/js/main.7297bdc6.chunk.js.map",
+    "runtime-main.js": "/middtownperspectives/static/js/runtime-main.ade67707.js",
+    "runtime-main.js.map": "/middtownperspectives/static/js/runtime-main.ade67707.js.map",
+    "static/js/2.84adc164.chunk.js": "/middtownperspectives/static/js/2.84adc164.chunk.js",
+    "static/js/2.84adc164.chunk.js.map": "/middtownperspectives/static/js/2.84adc164.chunk.js.map",
+    "index.html": "/middtownperspectives/index.html",
+    "precache-manifest.f603352aafdfd872268208661fb56ddc.js": "/middtownperspectives/precache-manifest.f603352aafdfd872268208661fb56ddc.js",
+    "service-worker.js": "/middtownperspectives/service-worker.js",
+    "static/css/main.1f5d60fc.chunk.css.map": "/middtownperspectives/static/css/main.1f5d60fc.chunk.css.map",
+    "static/js/2.84adc164.chunk.js.LICENSE.txt": "/middtownperspectives/static/js/2.84adc164.chunk.js.LICENSE.txt",
+    "static/media/under-construction.png": "/middtownperspectives/static/media/under-construction.13a13a9f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b34d484d.js",
-    "static/js/2.96816075.chunk.js",
-    "static/css/main.bfa04731.chunk.css",
-    "static/js/main.2303002c.chunk.js"
+    "static/js/runtime-main.ade67707.js",
+    "static/js/2.84adc164.chunk.js",
+    "static/css/main.1f5d60fc.chunk.css",
+    "static/js/main.7297bdc6.chunk.js"
   ]
 }
