@@ -1,6 +1,6 @@
-# aaronmiddleton
+# middtownperspectives
 
-Portfolio progress can be viewed at [aaronmiddleton](http://www.aaronmiddleton).
+Portfolio progress can be viewed at [middtownperspectives](http://www.middtownperspectives).
 
 ## About
 
@@ -12,7 +12,7 @@ This also acts as a way for me to practice and keep details and smaller skills s
 
 ### Interest in my work
 
-My current portfolio site that I officially share out for professional reasons can be found at [aaronmiddleton.co](https://www.aaronmiddleton.co)
+My current portfolio site that I officially share out for professional reasons can be found at [middtownperspectives.co](https://www.middtownperspectives.co)
 
 <!-- # MoodBar
 
@@ -24,7 +24,7 @@ You may need to download the expo app for [ios](http://apple.co/2c6HMtp) or [and
 
 ---
 
-Web page coming soon (https://middtownperspectives.github.io/aaronmiddleton/).
+Web page coming soon (https://middtownperspectives.github.io/middtownperspectives/).
 
 ### WNM820 Technical Implementation
 
