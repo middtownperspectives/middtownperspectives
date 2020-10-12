@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cfc2f0fb3931df737838cbb65d0abfe6",
+    "revision": "57317965109e2d6cd6a6728c96a1c160",
     "url": "/middtownperspectives/index.html"
   },
   {
-    "revision": "c721bb49ef7f18a3bec6",
+    "revision": "5135121b5f930e7ea1b2",
     "url": "/middtownperspectives/static/css/main.e06fd5ef.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/middtownperspectives/static/js/2.84fd7e8b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c721bb49ef7f18a3bec6",
-    "url": "/middtownperspectives/static/js/main.c78ec5f9.chunk.js"
+    "revision": "5135121b5f930e7ea1b2",
+    "url": "/middtownperspectives/static/js/main.020b2bb8.chunk.js"
   },
   {
     "revision": "ade10278898bf022dea6",

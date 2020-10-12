@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/middtownperspectives/static/css/main.e06fd5ef.chunk.css",
-    "main.js": "/middtownperspectives/static/js/main.c78ec5f9.chunk.js",
-    "main.js.map": "/middtownperspectives/static/js/main.c78ec5f9.chunk.js.map",
+    "main.js": "/middtownperspectives/static/js/main.020b2bb8.chunk.js",
+    "main.js.map": "/middtownperspectives/static/js/main.020b2bb8.chunk.js.map",
     "runtime-main.js": "/middtownperspectives/static/js/runtime-main.ade67707.js",
     "runtime-main.js.map": "/middtownperspectives/static/js/runtime-main.ade67707.js.map",
     "static/js/2.84fd7e8b.chunk.js": "/middtownperspectives/static/js/2.84fd7e8b.chunk.js",
     "static/js/2.84fd7e8b.chunk.js.map": "/middtownperspectives/static/js/2.84fd7e8b.chunk.js.map",
     "index.html": "/middtownperspectives/index.html",
-    "precache-manifest.db0f3a28210b38452e6279d05fb03eee.js": "/middtownperspectives/precache-manifest.db0f3a28210b38452e6279d05fb03eee.js",
+    "precache-manifest.b572324ac76834d139b445f2406208bd.js": "/middtownperspectives/precache-manifest.b572324ac76834d139b445f2406208bd.js",
     "service-worker.js": "/middtownperspectives/service-worker.js",
     "static/css/main.e06fd5ef.chunk.css.map": "/middtownperspectives/static/css/main.e06fd5ef.chunk.css.map",
     "static/js/2.84fd7e8b.chunk.js.LICENSE.txt": "/middtownperspectives/static/js/2.84fd7e8b.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ade67707.js",
     "static/js/2.84fd7e8b.chunk.js",
     "static/css/main.e06fd5ef.chunk.css",
-    "static/js/main.c78ec5f9.chunk.js"
+    "static/js/main.020b2bb8.chunk.js"
   ]
 }
