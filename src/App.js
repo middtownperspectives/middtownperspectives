@@ -23,7 +23,7 @@ function App() {
         <Header />
         <main>
           <Switch>
-            <Route exact path="/" component={HomePage} />
+            <Route exact path="/home" component={HomePage} />
             <Route path="/thesis" component={ThesisPage} />
             <Route path="/resume" component={ResumePage} /> 
             <Route path="/photography" component={PhotographyPage} /> 
