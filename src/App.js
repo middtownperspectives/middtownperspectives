@@ -23,14 +23,14 @@ function App() {
         <Header />
         <main>
           <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/thesis" component={ThesisPage} />
-            <Route path="/resume" component={ResumePage} /> 
-            <Route path="/photography" component={PhotographyPage} /> 
-            <Route path="/design" component={DesignPage} /> 
-            <Route path="/development" component={DevelopmentPage} /> 
-            <Route path="/playlist" component={PlaylistPage} /> 
-            <Route path="/about" component={AboutPage} /> 
+            <Route exact path="/middtownperspectives" component={HomePage} />
+            <Route path="/middtownperspectives/thesis" component={ThesisPage} />
+            <Route path="/middtownperspectives/resume" component={ResumePage} /> 
+            <Route path="/middtownperspectives/photography" component={PhotographyPage} /> 
+            <Route path="/middtownperspectives/design" component={DesignPage} /> 
+            <Route path="/middtownperspectives/development" component={DevelopmentPage} /> 
+            <Route path="/middtownperspectives/playlist" component={PlaylistPage} /> 
+            <Route path="/middtownperspectives/about" component={AboutPage} /> 
             <Route component={NotFoundPage} />
           </Switch>
         </main> 
