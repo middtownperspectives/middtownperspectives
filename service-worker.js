@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/middtownperspectives/precache-manifest.f603352aafdfd872268208661fb56ddc.js"
+  "/middtownperspectives/precache-manifest.db0f3a28210b38452e6279d05fb03eee.js"
 );
 
 self.addEventListener('message', (event) => {
