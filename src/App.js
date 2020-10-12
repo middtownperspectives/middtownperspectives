@@ -20,23 +20,23 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-      <Header />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-          <Route path="/thesis" component={ThesisPage} />
-          <Route path="/resume" component={ResumePage} /> 
-          <Route path="/photography" component={PhotographyPage} /> 
-          <Route path="/design" component={DesignPage} /> 
-          <Route path="/development" component={DevelopmentPage} /> 
-          <Route path="/playlist" component={PlaylistPage} /> 
-          <Route path="/about" component={AboutPage} /> 
-          <Route component={NotFoundPage} />
-      </Switch>
-            
-      <Footer />
-    </div>
-
-  </BrowserRouter>
+        <Header />
+        <main>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/thesis" component={ThesisPage} />
+            <Route path="/resume" component={ResumePage} /> 
+            <Route path="/photography" component={PhotographyPage} /> 
+            <Route path="/design" component={DesignPage} /> 
+            <Route path="/development" component={DevelopmentPage} /> 
+            <Route path="/playlist" component={PlaylistPage} /> 
+            <Route path="/about" component={AboutPage} /> 
+            <Route component={NotFoundPage} />
+          </Switch>
+        </main> 
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

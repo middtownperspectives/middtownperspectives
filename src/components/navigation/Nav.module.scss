@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 2%;
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    min-width: 50%;
+    flex-wrap: wrap;
+
+    li, 
+    .navlink {
+      padding-left: 1rem;
+      color: #222;
+      
+      a {
+        text-decoration: none;
+        color: #222;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+}
