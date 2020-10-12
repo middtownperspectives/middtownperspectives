@@ -1,6 +1,6 @@
 # middtownperspectives
 
-Portfolio progress can be viewed at [middtownperspectives](http://www.middtownperspectives.co).
+Portfolio progress can be viewed at [middtownperspectives](https://middtownperspectives.github.io/middtownperspectives/).
 
 ## About
 
