@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -14,15 +16,40 @@
     li, 
     .navlink {
       padding-left: 1rem;
-      color: #222;
+      color: $black;
       
       a {
         text-decoration: none;
-        color: #222;
+        color: $black;
+        position: relative;
+
+        &:visited,
+        &:link,
+        &:active {
+          color: $black;
+        }
+
+        &::after {
+          content: "";
+          border-top: 0.1em solid $black;
+          border-radius: 1em;
+          position: absolute;
+          right: 100%;
+          top: 1.5em;          
+          left: 0;
+          transition: right 0.4s cubic-bezier(0, 0.5, 0, 1);
+        }
 
         &:hover {
-          text-decoration: underline;
+          text-decoration: none;
+
+          &::after {
+            position: absolute;
+            right: 0;
+            border-color: $black;
+          }
         }
+
       }
     }
   }
