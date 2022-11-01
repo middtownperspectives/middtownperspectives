@@ -1,12 +1,12 @@
 # 👋🏾 Hi I'm Aaron
-aka
-Middtown Perspectives
-*yes my nickname has a lastname* 😅
+
+aka Middtown Perspectives
+
+<span style="font-size:12px">yes my nickname has a lastname 😅 </span>
 
 ### Skills
-
-<img height="24px" width="24px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-<img height="24px" width="24px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+<div style="display:flex; justify-content:space-between; flex-direction:row;">
+<img height="24px" width="24px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /><img height="24px" width="24px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /> 
 <img height="24px" width="24px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
 <img height="24px" width="24px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
 <img height="24px" width="24px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
@@ -21,10 +21,16 @@ Middtown Perspectives
 <img height="24px" width="24px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" />
 <img height="24px" width="24px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
 <img height="24px" width="24px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg" />
-
+</div>
 
 ### Organizing My ⬜🍯🧊🍵
+
 Portfolio progress can be viewed at [middtownperspectives](https://middtownperspectives.github.io/middtownperspectives/).
-#### In My Free Time
-[I make images](https://www.middtownperspectives.com)
+
 [I try to build and design tech things](https://www.aaronmiddleton.co)
+
+#### In My Free Time
+
+[I make images](https://www.middtownperspectives.com)
+
+
