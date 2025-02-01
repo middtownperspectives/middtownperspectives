@@ -1,10 +1,8 @@
 # 👋🏾 Hi I'm Aaron
 
-aka Middtown Perspectives
+Welcome to Middtown Perspectives
 
-<span style="font-size:12px">yes my nickname has a lastname 😅 </span>
-
-### Skills
+## Skills
 <div style="display:flex; justify-content:space-between; flex-direction:row;">
 <img height="24px" width="24px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /><img height="24px" width="24px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /> 
 <img height="24px" width="24px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
@@ -23,14 +21,6 @@ aka Middtown Perspectives
 <img height="24px" width="24px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg" />
 </div>
 
-### Organizing My ⬜🍯🧊🍵
+## Organizing My Stuff
 
-Portfolio progress can be viewed at [middtownperspectives](https://middtownperspectives.github.io/middtownperspectives/).
-
-[I try to build and design tech things](https://www.aaronmiddleton.co)
-
-#### In My Free Time
-
-[I make images](https://www.middtownperspectives.com)
-
-
+[I try to build and design tech things](https://www.aaronmiddleton.co) and [make images](https://www.middtownperspectives.com)
