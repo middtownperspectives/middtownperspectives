@@ -38,8 +38,8 @@ A Vue 3 + Vite rebuild of middtownperspectives.com — a photograph gallery site
 ### Run locally
 
 ```bash
-npm install
-npm run dev
+yarn install
+yarn dev
 ```
 
 Then open the printed local URL (usually http://localhost:5173).
@@ -47,11 +47,11 @@ Then open the printed local URL (usually http://localhost:5173).
 ### Build for production
 
 ```bash
-npm run build
+yarn build
 ```
 
-This outputs a static site to `dist/` — deployable anywhere that serves
-static files (Netlify, Vercel, Cloudflare Pages, GitHub Pages, S3, etc.).
+This outputs a static site to `dist/`, which is what gets deployed to
+Cloudflare.
 
 ### Important: move your images off Squarespace's CDN
 
@@ -90,17 +90,21 @@ To fully own your images:
 
 ### Deploying
 
-The simplest path is Cloudflare Pages, Netlify, or Vercel:
+This site is deployed as static assets on Cloudflare Workers (not GitHub
+Pages, not Cloudflare Pages). [`wrangler.jsonc`](wrangler.jsonc) points
+`assets.directory` at `./dist`, so a deploy is just:
 
-1. Push this project to a GitHub repo.
-2. Connect the repo in your host of choice.
-3. Build command: `npm run build`. Output directory: `dist`.
-4. Point your domain's DNS at the host once the first deploy succeeds.
+```bash
+yarn build
+npx wrangler deploy
+```
+
+In the Cloudflare dashboard, this repo is connected as a Workers Git
+integration project, which runs `yarn run build` then `wrangler deploy`
+automatically on push.
 
 ### Domain
 
-Your domain registration (middtownperspectives.com) is separate from
-Squarespace hosting/subscription -- cancelling the site subscription doesn't
-usually cancel the domain itself, but double check in your Squarespace
-domains settings before you finish migrating, so you don't lose the domain
-along with the site.
+middtownperspectives.com is managed in Cloudflare (DNS + registrar) and
+routed to this Worker via a custom domain in the Cloudflare dashboard —
+there's no `CNAME` file or other in-repo domain config to maintain.
