@@ -1,8 +1,30 @@
-# Middtown Perspectives
+# I'm Aaron
+
+## Welcome to Middtown Perspectives
+
+### Skills
+
+<div style="display:flex; justify-content:space-between; flex-direction:row;">
+<img height="24px" width="24px" alt="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+<img height="24px" width="24px" alt="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+<img height="24px" width="24px" alt="Sass" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+<img height="24px" width="24px" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+<img height="24px" width="24px" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+<img height="24px" width="24px" alt="Vue.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" />
+<img height="24px" width="24px" alt="Vite" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" />
+</div>
+
+### Organizing My Stuff
+
+I build, design and [make things](https://www.aaronmiddleton.co) while also practicing my passion for [photography, typography and print](https://www.middtownperspectives.com)
+
+---
+
+## Middtown Perspectives (this repo)
 
 A Vue 3 + Vite rebuild of middtownperspectives.com — a photograph gallery site, previously on Squarespace.
 
-## Structure
+### Structure
 
 - `src/App.vue` — top-level layout (header, hero, gallery, footer, lightbox)
 - `src/components/SiteHeader.vue` — fixed nav with wordmark + social links
@@ -13,7 +35,7 @@ A Vue 3 + Vite rebuild of middtownperspectives.com — a photograph gallery site
 - `src/data/photos.js` — all photo data (this is the file to edit to add,
   remove, or reorder photos)
 
-## Run locally
+### Run locally
 
 ```bash
 npm install
@@ -22,7 +44,7 @@ npm run dev
 
 Then open the printed local URL (usually http://localhost:5173).
 
-## Build for production
+### Build for production
 
 ```bash
 npm run build
@@ -31,7 +53,7 @@ npm run build
 This outputs a static site to `dist/` — deployable anywhere that serves
 static files (Netlify, Vercel, Cloudflare Pages, GitHub Pages, S3, etc.).
 
-## Important: move your images off Squarespace's CDN
+### Important: move your images off Squarespace's CDN
 
 Right now `src/data/photos.js` points at the original
 `images.squarespace-cdn.com` URLs so the site works immediately. Squarespace
@@ -55,7 +77,7 @@ To fully own your images:
 
    Vite will bundle, hash, and optimize these automatically.
 
-## Editing content
+### Editing content
 
 - Add/remove/reorder photos: edit the `photos` array in
   `src/data/photos.js`.
@@ -66,7 +88,7 @@ To fully own your images:
   as CSS custom properties (--void, --paper, --warm-gray, --safelight,
   --font-display, --font-body, --font-mono).
 
-## Deploying
+### Deploying
 
 The simplest path is Cloudflare Pages, Netlify, or Vercel:
 
@@ -75,7 +97,7 @@ The simplest path is Cloudflare Pages, Netlify, or Vercel:
 3. Build command: `npm run build`. Output directory: `dist`.
 4. Point your domain's DNS at the host once the first deploy succeeds.
 
-## Domain
+### Domain
 
 Your domain registration (middtownperspectives.com) is separate from
 Squarespace hosting/subscription -- cancelling the site subscription doesn't
