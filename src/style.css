@@ -1,13 +1,32 @@
-:root {
-  --void: #101012;
-  --paper: #F2EFE9;
-  --warm-gray: #96908A;
-  --safelight: #C1432E;
+:root,
+[data-theme='middtown'] {
+  --bg: #101012;
+  --ink: #F2EFE9;
+  --muted: #96908A;
+  --accent: #C1432E;
   --hairline: rgba(242, 239, 233, 0.14);
+  --overlay: rgba(10, 10, 11, 0.97);
 
   --font-display: 'Fraunces', Georgia, serif;
   --font-body: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
   --font-mono: 'Space Mono', 'Courier New', monospace;
+
+  --margin: clamp(1.25rem, 3vw, 3rem);
+  --gutter: clamp(0.75rem, 1.5vw, 1.25rem);
+}
+
+[data-theme='tamarind'] {
+  /* Tamarind palette — the fruit's own layers: dark pulp, amber flesh, pale pod */
+  --bg: #F6EFE4;
+  --ink: #2C2117;
+  --muted: #7C8467;
+  --accent: #C08A52;
+  --hairline: rgba(44, 33, 23, 0.12);
+  --overlay: rgba(44, 33, 23, 0.97);
+
+  --font-display: 'Newsreader', Georgia, serif;
+  --font-body: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
 }
 
 * { box-sizing: border-box; }
@@ -15,8 +34,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: var(--void);
-  color: var(--paper);
+  background: var(--bg);
+  color: var(--ink);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
 }
@@ -41,8 +60,8 @@ img {
 }
 
 ::selection {
-  background: var(--safelight);
-  color: var(--paper);
+  background: var(--accent);
+  color: var(--bg);
 }
 
 @media (prefers-reduced-motion: reduce) {
