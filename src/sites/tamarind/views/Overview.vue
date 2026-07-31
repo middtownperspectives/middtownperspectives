@@ -1,29 +1,10 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref, watch } from 'vue'
+import { computed } from 'vue'
 import { usePhotos } from '../composables/usePhotos'
+import { useCycler } from '../../../shared/composables/useCycler'
 
 const { featured } = usePhotos()
-
-const activeIndex = ref(0)
-let timer: ReturnType<typeof setInterval> | undefined
-
-function start() {
-  stop()
-  if (featured.value.length < 2) return
-  timer = setInterval(() => {
-    activeIndex.value = (activeIndex.value + 1) % featured.value.length
-  }, 5500)
-}
-function stop() {
-  if (timer) clearInterval(timer)
-}
-
-onMounted(start)
-onUnmounted(stop)
-watch(featured, () => {
-  activeIndex.value = 0
-  start()
-})
+const { activeIndex } = useCycler(computed(() => featured.value.length), 5500)
 </script>
 
 <template>
