@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { crossSiteUrl } from '../../../lib/site'
 
-const middtownUrl = crossSiteUrl('middtown')
 const route = useRoute()
 const floating = computed(() => route.name === 'overview')
 </script>
@@ -14,7 +12,7 @@ const floating = computed(() => route.name === 'overview')
     <div class="footer__links">
       <a href="mailto:tamarind@onaseda.com">Email</a>
       <a href="https://www.instagram.com/studio.tamarind" target="_blank" rel="noopener">Instagram</a>
-      <a :href="middtownUrl">Middtown Perspectives</a>
+      <a href="https://formyard.studio/photography/" target="_blank" rel="noopener">FormYard</a>
     </div>
   </footer>
 </template>
