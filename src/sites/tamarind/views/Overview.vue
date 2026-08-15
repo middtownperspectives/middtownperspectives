@@ -41,10 +41,16 @@ const { activeIndex } = useCycler(computed(() => featured.value.length), 5500)
 }
 
 .cycle__img {
+  /* Overscan by --cover-crop and let the section's overflow:hidden clip it,
+     trimming any white border some source photos carry. max-width override
+     is required: the global `img { max-width: 100% }` reset otherwise
+     clamps this back down to exactly 100%, silently canceling the
+     horizontal half of the overscan. */
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  inset: calc(-1 * var(--cover-crop));
+  width: calc(100% + var(--cover-crop) * 2);
+  height: calc(100% + var(--cover-crop) * 2);
+  max-width: none;
   object-fit: cover;
   object-position: center 20%;
   opacity: 0;

@@ -18,6 +18,19 @@
 
   --margin: clamp(1.25rem, 3vw, 3rem);
   --gutter: clamp(0.75rem, 1.5vw, 1.25rem);
+
+  /* Some source photos carry a genuine ~17px white mat baked into the file
+     (at ~1800px native size, i.e. roughly 1% of the shorter edge). Cover/tile
+     images that introduce a series (home hero, project tiles) trim it off by
+     overscanning the frame by this percentage — a % (not a fixed px value)
+     so the crop scales with object-fit:cover the same way the border itself
+     does, regardless of how large the tile is rendered. Sized well above the
+     ~1.8% bare-minimum some crops need (a landscape photo cover-cropped into
+     a portrait tile needs the most) since JPEG compression softens the
+     border's edge over a few extra pixels. Full-series galleries
+     (Gallery.vue) leave photos alone since those show the image as
+     delivered. */
+  --cover-crop: 3%;
 }
 
 [data-theme='tamarind'] {
