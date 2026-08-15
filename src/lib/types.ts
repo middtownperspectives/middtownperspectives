@@ -93,8 +93,8 @@ export const tamarindProjects: Project[] = [
     tagline: 'Images coming soon.',
   },
   {
-    slug: 'denver-neighborhoods',
-    label: 'Denver Neighborhoods',
+    slug: 'five-points',
+    label: 'Five Points',
     tagline: 'Images coming soon.',
   },
 ]

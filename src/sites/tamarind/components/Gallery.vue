@@ -44,7 +44,6 @@ const emit = defineEmits<{ open: [index: number] }>()
   width: 100%;
   height: auto;
   display: block;
-  transition: transform 0.5s ease;
 }
 
 .frame__edge {
@@ -53,11 +52,6 @@ const emit = defineEmits<{ open: [index: number] }>()
   border: 1px solid transparent;
   transition: border-color 0.25s ease;
   pointer-events: none;
-}
-
-.frame:hover .frame__img,
-.frame:focus-visible .frame__img {
-  transform: scale(1.04);
 }
 
 .frame:hover .frame__edge,

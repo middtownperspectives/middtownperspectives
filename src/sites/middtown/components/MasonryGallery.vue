@@ -45,7 +45,7 @@ const emit = defineEmits<{ open: [index: number] }>()
   width: 100%;
   height: auto;
   display: block;
-  transition: transform 0.5s ease, filter 0.4s ease;
+  transition: filter 0.4s ease;
 }
 
 .frame__border {
@@ -70,11 +70,6 @@ const emit = defineEmits<{ open: [index: number] }>()
   opacity: 0;
   transform: translateY(-4px);
   transition: opacity 0.25s ease, transform 0.25s ease;
-}
-
-.frame:hover .frame__img,
-.frame:focus-visible .frame__img {
-  transform: scale(1.035);
 }
 
 .frame:hover .frame__border,

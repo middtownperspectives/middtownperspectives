@@ -1,31 +1,66 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted } from 'vue'
+import { onMounted, onUnmounted, nextTick, ref } from 'vue'
 import type { Photo } from '../../lib/types'
 
-defineProps<{
+const props = defineProps<{
   photos: Photo[]
   index: number
 }>()
 const emit = defineEmits<{ close: []; next: []; prev: [] }>()
 
+const root = ref<HTMLElement | null>(null)
+let previouslyFocused: HTMLElement | null = null
+
+function focusableEls(): HTMLElement[] {
+  return Array.from(root.value?.querySelectorAll<HTMLElement>('button') ?? [])
+}
+
+// Keep Tab/Shift+Tab cycling within the three buttons instead of leaking
+// focus out to the gallery underneath the overlay.
+function trapFocus(e: KeyboardEvent) {
+  const els = focusableEls()
+  if (els.length === 0) return
+  const first = els[0]
+  const last = els[els.length - 1]
+  if (e.shiftKey && document.activeElement === first) {
+    e.preventDefault()
+    last.focus()
+  } else if (!e.shiftKey && document.activeElement === last) {
+    e.preventDefault()
+    first.focus()
+  }
+}
+
 function onKeydown(e: KeyboardEvent) {
   if (e.key === 'Escape') emit('close')
   if (e.key === 'ArrowRight') emit('next')
   if (e.key === 'ArrowLeft') emit('prev')
+  if (e.key === 'Tab') trapFocus(e)
 }
 
-onMounted(() => {
+onMounted(async () => {
+  previouslyFocused = document.activeElement as HTMLElement | null
   window.addEventListener('keydown', onKeydown)
   document.body.style.overflow = 'hidden'
+  await nextTick()
+  focusableEls()[0]?.focus()
 })
 onUnmounted(() => {
   window.removeEventListener('keydown', onKeydown)
   document.body.style.overflow = ''
+  previouslyFocused?.focus()
 })
 </script>
 
 <template>
-  <div class="lightbox" @click.self="emit('close')">
+  <div
+    ref="root"
+    class="lightbox"
+    role="dialog"
+    aria-modal="true"
+    :aria-label="props.photos[props.index].alt"
+    @click.self="emit('close')"
+  >
     <button class="lightbox__close" type="button" @click="emit('close')" aria-label="Close">✕</button>
 
     <button class="lightbox__nav lightbox__nav--prev" type="button" @click="emit('prev')" aria-label="Previous photo">‹</button>
@@ -82,7 +117,7 @@ onUnmounted(() => {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 0.15em;
-  color: var(--accent);
+  color: var(--overlay-accent);
 }
 
 .lightbox__close {
@@ -97,7 +132,7 @@ onUnmounted(() => {
   padding: 0.5rem;
   transition: color 0.2s ease;
 }
-.lightbox__close:hover { color: var(--accent); }
+.lightbox__close:hover { color: var(--overlay-accent); }
 
 .lightbox__nav {
   position: absolute;
@@ -105,13 +140,13 @@ onUnmounted(() => {
   transform: translateY(-50%);
   background: none;
   border: 0;
-  color: var(--muted);
+  color: var(--overlay-muted);
   font-size: 2.75rem;
   line-height: 1;
   padding: 0.5rem 1rem;
   transition: color 0.2s ease;
 }
-.lightbox__nav:hover { color: var(--accent); }
+.lightbox__nav:hover { color: var(--overlay-accent); }
 .lightbox__nav--prev { left: 0.5rem; }
 .lightbox__nav--next { right: 0.5rem; }
 

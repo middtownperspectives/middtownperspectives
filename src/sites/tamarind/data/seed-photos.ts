@@ -134,6 +134,8 @@ export const photosByCategory = {
   { id: 'salon-30', site: 'tamarind', category: 'special-projects', project: 'the-salon', orientation: 'horizontal', src: resolveImage('salon-30.jpg'), alt: "A stylist applies eyeliner to a seated client with silver hair" },
   { id: 'salon-31', site: 'tamarind', category: 'special-projects', project: 'the-salon', orientation: 'vertical', src: resolveImage('salon-31.jpg'), alt: "Extreme close-up of a client's eyebrow being groomed" },
   { id: 'salon-32', site: 'tamarind', category: 'special-projects', project: 'the-salon', orientation: 'vertical', src: resolveImage('salon-32.jpg'), alt: "The stylist poses with three clients, all smiling" },
+  { id: 'letterpress-01', site: 'tamarind', category: 'special-projects', project: 'letterpress', orientation: 'vertical', src: resolveImage('letterpress-01.jpg'), alt: "An old letterpress machine loaded with wood type, sunlit in a print studio", featured: true },
+  { id: 'five-points-01', site: 'tamarind', category: 'special-projects', project: 'five-points', orientation: 'vertical', src: resolveImage('five-points-01.jpg'), alt: "Black-and-white, a Union Pacific freight train passes below a high-rise apartment tower in Five Points", featured: true },
   ],
 } satisfies Record<string, Photo[]>
 

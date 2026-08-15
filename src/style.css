@@ -3,9 +3,14 @@
   --bg: #101012;
   --ink: #F2EFE9;
   --muted: #96908A;
-  --accent: #C1432E;
+  --accent: #D1523D;
   --hairline: rgba(242, 239, 233, 0.14);
   --overlay: rgba(10, 10, 11, 0.97);
+  /* Text colors guaranteed to hit 4.5:1 against --overlay specifically —
+     middtown's own --muted/--accent already clear that bar on its near-black
+     overlay, so these just alias them. */
+  --overlay-muted: var(--muted);
+  --overlay-accent: var(--accent);
 
   --font-display: 'Fraunces', Georgia, serif;
   --font-body: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
@@ -19,10 +24,15 @@
   /* Tamarind palette — the fruit's own layers: dark pulp, amber flesh, pale pod */
   --bg: #F6EFE4;
   --ink: #2C2117;
-  --muted: #7C8467;
-  --accent: #C08A52;
+  --muted: #697057;
+  --accent: #916435;
   --hairline: rgba(44, 33, 23, 0.12);
   --overlay: rgba(44, 33, 23, 0.97);
+  /* --muted/--accent above are calibrated for --bg (light); the lightbox
+     renders on --overlay (dark) instead, so it needs its own pair to keep
+     4.5:1 contrast on that dark background. */
+  --overlay-muted: #878F70;
+  --overlay-accent: #C08A52;
 
   --font-display: 'Newsreader', Georgia, serif;
   --font-body: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;

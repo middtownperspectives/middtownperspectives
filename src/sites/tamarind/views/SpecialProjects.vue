@@ -10,7 +10,8 @@ const tiles = computed(() =>
   tamarindProjects.map((project) => {
     const photos = byProject(project.slug).value
     const cover = photos.find((p) => p.featured) ?? photos[0]
-    return { ...project, cover }
+    const comingSoon = project.tagline.toLowerCase().includes('coming soon')
+    return { ...project, cover, comingSoon }
   })
 )
 </script>
@@ -19,19 +20,20 @@ const tiles = computed(() =>
   <PageHead title="Special Projects" tagline="Longer-form documentary work." />
 
   <div class="projects">
-    <router-link
+    <component
+      :is="tile.comingSoon ? 'div' : 'router-link'"
       v-for="tile in tiles"
       :key="tile.slug"
       class="project-tile"
       :class="{ 'project-tile--empty': !tile.cover }"
-      :to="`/special-projects/${tile.slug}`"
+      :to="tile.comingSoon ? undefined : `/special-projects/${tile.slug}`"
     >
       <img v-if="tile.cover" class="project-tile__img" :src="tile.cover.src" :alt="tile.cover.alt" />
       <div class="project-tile__caption">
         <h2 class="project-tile__label">{{ tile.label }}</h2>
         <p class="project-tile__tagline">{{ tile.tagline }}</p>
       </div>
-    </router-link>
+    </component>
   </div>
 </template>
 
@@ -55,12 +57,6 @@ const tiles = computed(() =>
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.project-tile:hover .project-tile__img,
-.project-tile:focus-visible .project-tile__img {
-  transform: scale(1.04);
 }
 
 .project-tile__caption {
